@@ -14,6 +14,10 @@
 ## 2. 결과 데모 및 분석
 
 ### 2.1 만화 같은 느낌이 잘 표현되는 이미지 (Success Case)
+<img width="2032" height="1100" alt="Image" src="https://github.com/user-attachments/assets/f7ae1e9e-15f3-4e8f-9776-38a111f4005d" />
+
+<img width="1612" height="890" alt="Image" src="https://github.com/user-attachments/assets/67f3eddf-ec9e-4f38-a74f-5bf34a6a9627" />
+
 * **대상**: 캡틴 아메리카 피규어 및 역동적인 복싱 경기 사진
 * **분석**:
     * **선명한 윤곽선**: 피사체와 배경의 대비가 명확한 피규어 이미지에서 `adaptiveThreshold`가 객체의 외곽선을 굵고 선명하게 잡아내어 완벽한 애니메이션 느낌을 구현했다.
@@ -21,6 +25,10 @@
     * **노이즈 억제**: 경기장 배경의 복잡한 요소들이 `medianBlur`를 통해 정돈되어 지저분한 검은 점 없이 깔끔하게 렌더링되었다.
 
 ### 2.2 만화 같은 느낌이 잘 표현되지 않는 이미지 (Failure Case)
+<img width="1312" height="886" alt="Image" src="https://github.com/user-attachments/assets/4d56653d-f857-4632-bf7b-0301e5c48c37" />
+
+<img width="1267" height="1167" alt="Image" src="https://github.com/user-attachments/assets/07115d00-9c59-4a8a-a5a8-348420ae14cc" />
+
 * **대상**: 고해상도 인물 근접 사진 및 흑백 포스터
 * **분석**:
     * **디테일 노이즈**: 인물의 수염이나 피부의 땀방울 등 미세한 질감이 많은 경우, 알고리즘이 이를 모두 에지로 인식하여 결과물이 지저분한 '검은 점'들로 덮이는 현상이 발생했다.
